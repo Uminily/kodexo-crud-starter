@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres
+
+    # CHANGE CONTAINER NAME
+    container_name: 'postgres-kodexo-starter-crud'
+
+    # CHANGE CONTAINER PORT
+    expose:
+      - '5432'
+    ports:
+      - '5432:5432'
+
+    restart: always
+
+    # CHANGE DB CREDENTIALS
+    environment:
+      POSTGRES_PASSWORD: kodexo-starter-crud
+      POSTGRES_USER: kodexo-starter-crud
+      POSTGRES_DB: kodexo-starter-crud

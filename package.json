@@ -1,0 +1,39 @@
+{
+  "name": "kodexo-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Uminily/kodexo-starter.git",
+  "author": "Xavier HEN <uminily@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev ./src/start.ts",
+    "build": "rimraf ./dist && tsc -b tsconfig.json"
+  },
+  "dependencies": {
+    "@kodexo/app": "^1.0.0-dev.19",
+    "@kodexo/common": "^1.0.0-dev.18",
+    "@kodexo/config": "^1.0.0-dev.18",
+    "@kodexo/crud": "^1.0.0-dev.19",
+    "@kodexo/errors": "^1.0.0-dev.18",
+    "@kodexo/injection": "^1.0.0-dev.18",
+    "@kodexo/logger": "^1.0.0-dev.18",
+    "@kodexo/mikro-orm": "^1.0.0-dev.18",
+    "@kodexo/openapi": "^1.0.0-dev.18",
+    "@mikro-orm/core": "^5.2.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.8.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.3"
+  }
+}
