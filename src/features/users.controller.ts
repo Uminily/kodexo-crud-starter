@@ -5,7 +5,7 @@ import { CreateUserDto } from './dto/create-user.dto'
 import { UpdateUserDto } from './dto/update-user.dto'
 import { User } from './entities/user.entity'
 import { UserSerialized } from './serializations/user.serialized'
-import { UsersService } from './users.service'
+import { UsersService } from './services/users.service'
 
 @Crud({
   model: User,
