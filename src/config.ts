@@ -15,7 +15,6 @@ export const config: ServerConfiguration = {
     type: 'postgresql',
     debug: false,
     loadStrategy: LoadStrategy.JOINED,
-    allowGlobalContext: true,
     migrations: {
       tableName: 'migrations',
       path: './migrations',
